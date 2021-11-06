@@ -78,7 +78,7 @@ header {
     width: 80%;
     height: auto;
     overflow: hidden;
-    border: 1px solid;
+    border: 0px solid;
     margin: 10px auto;
 }
 
@@ -86,7 +86,7 @@ header {
     width: 70%;
     height: auto;
     overflow: hidden;
-    border: 1px solid red;
+    border: 0px solid red;
     margin-top: 10px;
     float: left;
 }
@@ -177,18 +177,23 @@ header {
 #sidebar {
     float: right;
     width: 28%;
-    border: 1px solid;
+    border: 0px solid;
     height: auto;
     overflow: hidden;
+    margin-top: 10px;
 }
 
 #buscar, #categorias, #sitios-amigos, #ultimos-posts {
     border-radius: 10px;
-    width: 100%;
+    width: 98%;
     border: 1px solid #ccc;
     height: auto;
     overflow: hidden;
     margin-bottom: 20px;
+}
+
+form {
+    margin-top: 10px;
 }
 
 #buscar input[type="text"] {
@@ -218,3 +223,17 @@ header {
     font-size: 19px;
     font-family: 'calibri light';
 }
+
+.enlace-sidebar {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 5px;
+    color: #848484;
+}
+
+.enlace-sidebar:hover {
+    background: #f2f2f2;
+}
+
