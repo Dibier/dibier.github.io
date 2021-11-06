@@ -71,3 +71,58 @@ header {
     border-radius: 5px 5px 0px 0px;
     padding: 10px;
 }
+
+/*-----------contenido principal-----*/
+
+#principal {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid;
+    margin: 10px auto;
+}
+
+#publicaciones {
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid red;
+    margin-top: 10px;
+}
+
+.post {
+    width: 99%;
+    height: auto;
+    overflow: hidden;
+    padding: 7px;
+    background: #fdfdfd;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: #0489b1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #ccc;
+}
+
+.enlace-post {
+    text-decoration: none;
+}
+
+#publicaciones a .titulo-post {
+    color: #6e6e6e;
+    font-size: 22px;
+    font-family: 'calibri light';
+}
+
+#publicaciones a .titulo-post:hover {
+    text-decoration: underline;
+}
+
+#publicaciones .img-post {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin: 7px 7px 7px 0px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
