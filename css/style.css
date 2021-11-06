@@ -43,9 +43,9 @@ header {
     margin-top: 60px;
 }
 
-#menu ul {
+/*#menu ul {
 
-}
+}*/
 
 #menu ul li {
     list-style: none;
@@ -91,7 +91,7 @@ header {
 }
 
 .post {
-    width: 99%;
+    width: 96%;
     height: auto;
     overflow: hidden;
     padding: 7px;
@@ -101,6 +101,7 @@ header {
     border-left-color: #0489b1;
     border-radius: 10px;
     box-shadow: 0px 0px 15px #ccc;
+    margin-bottom: 25px;
 }
 
 .enlace-post {
@@ -125,4 +126,49 @@ header {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+#publicaciones .datos-publicaciones {
+    font-family: 'calibri light';
+    color: #0489b1;
+}
+
+#publicaciones .parrafo-post {
+    font-family: 'calibri light';
+    font-size: 16px;
+    color: #848484;
+    padding: 5px;
+}
+
+#publicaciones .leer-mas {
+    background: #0489b1;
+    color: #fff;
+    border: 0px;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#publicaciones .leer-mas:hover {
+    background: #086a87;
+    color: #fff;
+}
+
+#publicaciones .num-comentarios {
+    background: #0b3b39;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#publicaciones .enlace-paginacion {
+    text-decoration: none;
+    color: #0489b1;
+}
+
+#publicaciones .enlace-paginacion:hover {
+    text-decoration: underline;
 }
