@@ -1,0 +1,11 @@
+body {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  background-color: #fafafa;
+  color: #111;
+}
+
