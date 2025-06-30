@@ -31,3 +31,33 @@ footer a:hover {
 }
 
 
+
+
+.main-nav {
+  margin-top: 1rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 3rem; /* Espaciado entre los enlaces */
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: inherit;
+  color: #333;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #0077cc; /* Azul suave al pasar el mouse */
+}
