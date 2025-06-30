@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web de Dibier Marín</title>
+
+  <!-- Fuente EB Garamond desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+  <!-- Estilos CSS externos -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Configuración y carga de MathJax -->
+  <script type="text/javascript">
+    (function () {
+      // Configuración personalizada de MathJax para los delimitadores
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          packages: {'[+]': ['ams']}
+        },
+        loader: { load: ['[tex]/ams'] }
+      };
+
+      // Cargar MathJax de manera asíncrona
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.async = true;
+      script.onload = function () {
+        MathJax.typesetPromise().then(function () {
+          console.log("MathJax ha terminado de cargar");
+        }).catch(function (err) {
+          console.error("Error al cargar MathJax:", err);
+        });
+      };
+      document.head.appendChild(script);
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- Encabezado principal -->
+  <header>
+    <h1>Dibier Marín</h1>
+    <p>Trabajo personal y exploraciones en temas diversos.</p>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#" data-componente="blog">Blog</a></li>
+        <li><a href="#" data-componente="info">Sobre mí</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>
+      © 2025 Dibier Marín — Esta obra está bajo una licencia
+      <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="license noopener noreferrer">
+        Creative Commons Atribución-SinDerivadas 4.0 Internacional
+      </a>.
+    </p>
+    <p>
+      <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="license noopener noreferrer">
+        <img alt="Licencia Creative Commons" style="border-width:0"
+             src="https://licensebuttons.net/l/by-nd/4.0/88x31.png" />
+      </a>
+    </p>
+    <p>
+      Puedes compartir este contenido libremente, incluso con monetización
+      (por ejemplo en YouTube o plataformas educativas), siempre que cites adecuadamente al autor
+      y no modifiques la obra original sin consentimiento.
+    </p>
+    <p>
+      Este sitio utiliza 
+      <a href="https://www.mathjax.org/" target="_blank" rel="noopener noreferrer">MathJax</a> 
+      para la representación de fórmulas LaTeX,
+      y la tipografía 
+      <a href="https://fonts.google.com/specimen/EB+Garamond" target="_blank" rel="noopener noreferrer">EB Garamond</a> 
+      proporcionada por Google Fonts.
+    </p>
+
+  </footer>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
