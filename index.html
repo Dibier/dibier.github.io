@@ -5,12 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dibier Web</title>
 
+  <!--Icono-->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Fuente EB Garamond desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
   <!-- Estilos principales -->
   <link rel="stylesheet" href="index.css">
+
+  <!-- Configuración y carga de MathJax -->
+  <script type="text/javascript">
+    (function () {
+      // Configuración personalizada de MathJax para los delimitadores
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          packages: {'[+]': ['ams']}
+        },
+        loader: { load: ['[tex]/ams'] }
+      };
+
+      // Cargar MathJax de manera asíncrona
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.async = true;
+      script.onload = function () {
+        MathJax.typesetPromise().then(function () {
+          console.log("MathJax ha terminado de cargar");
+        }).catch(function (err) {
+          console.error("Error al cargar MathJax:", err);
+        });
+      };
+      document.head.appendChild(script);
+    })();
+  </script>
 </head>
 <body>
-  <div id="app"></div>
-
+  <sitio-web></sitio-web>
   <!-- Lógica principal -->
   <script src="index.js" defer></script>
 </body>
