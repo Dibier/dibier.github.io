@@ -28,6 +28,12 @@ async function cargarComponente(rutaBase, destino) {
       document.body.appendChild(script);
     }
 
+    // Renderizar fórmulas si MathJax ya está listo
+if (window.MathJax && MathJax.typesetPromise) {
+  MathJax.typesetPromise().catch(err => console.error(err));
+}
+
+
   } catch (error) {
     console.error(`Error cargando componente: ${rutaBase}`, error);
   }

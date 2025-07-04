@@ -16,31 +16,31 @@
 
   <!-- Configuración y carga de MathJax -->
   <script type="text/javascript">
-    (function () {
-      // Configuración personalizada de MathJax para los delimitadores
-      window.MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']],
-          displayMath: [['$$', '$$'], ['\\[', '\\]']],
-          packages: {'[+]': ['ams']}
-        },
-        loader: { load: ['[tex]/ams'] }
-      };
+  (function () {
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        packages: { '[+]': ['ams'] }
+      },
+      loader: { load: ['[tex]/ams'] },
+      startup: {
+        ready: () => {
+          console.log("MathJax listo");
+          MathJax.startup.defaultReady();
+          MathJax.typesetPromise();  // Renderiza lo que haya inicialmente
+        }
+      }
+    };
 
-      // Cargar MathJax de manera asíncrona
-      var script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.async = true;
-      script.onload = function () {
-        MathJax.typesetPromise().then(function () {
-          console.log("MathJax ha terminado de cargar");
-        }).catch(function (err) {
-          console.error("Error al cargar MathJax:", err);
-        });
-      };
-      document.head.appendChild(script);
-    })();
-  </script>
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+    script.async = true;
+    document.head.appendChild(script);
+  })();
+</script>
+
+
 </head>
 <body>
   <sitio-web></sitio-web>
