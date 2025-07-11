@@ -43,3 +43,60 @@ entrada-blog:hover {
   background-color: #f0f0f0;
   transition: background-color 0.3s ease;
 }
+
+
+/* Estilos para los elementos personalizados del blog */
+
+titulo-entrada {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.2em;
+}
+
+fecha-entrada {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1em;
+}
+
+prevista-entrada {
+  display: block;
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.5em;
+  padding: 0.5em 1em;
+  border-left: 4px solid #007acc;
+  background-color: #f9f9f9;
+}
+
+cuerpo-entrada {
+  display: block;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1rem;
+}
+
+cuerpo-entrada h2 {
+  margin-top: 1.5em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.2em;
+}
+
+cuerpo-entrada p {
+  margin: 1em 0;
+}
+
+cuerpo-entrada ul {
+  margin: 1em 0;
+  padding-left: 1.5em;
+}
+
+cuerpo-entrada li {
+  margin: 0.5em 0;
+}
+
