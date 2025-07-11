@@ -1,0 +1,45 @@
+/* Estilos generales del listado de entradas */
+entradas-blog {
+  display: block;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+/* Cada entrada individual */
+entrada-blog {
+  display: block;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #aaa;
+}
+
+entrada-blog:last-child {
+  border-bottom: none;
+}
+
+/* Estilos internos para las entradas */
+entrada-blog p {
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+entrada-blog h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Estilo sutil para MathJax o fórmulas */
+entrada-blog .MathJax {
+  font-size: 1.1em;
+}
+
+/* Estilo opcional para resaltar bloques de entrada si quieres */
+entrada-blog:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
