@@ -3,7 +3,7 @@
 // Cargar componente HTML, CSS y JS
 async function cargarComponente(rutaBase, destino) {
   try {
-    const res = await fetch(`${rutaBase}/component.html`);
+    const res = await fetch(`${rutaBase}/index.html`);
     const html = await res.text();
 
     const contenedor = (typeof destino === 'string')
