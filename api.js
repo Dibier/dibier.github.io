@@ -1,9 +1,9 @@
-// === Microframework Dibier: index.js ===
+// Microframework Dibier: index.js
 
 // Cargar componente HTML, CSS y JS
 async function cargarComponente(rutaBase, destino) {
   try {
-    const res = await fetch(`${rutaBase}.html`);
+    const res = await fetch(`${rutaBase}/index.html`);
     const html = await res.text();
 
     const contenedor = (typeof destino === 'string')
@@ -15,15 +15,15 @@ async function cargarComponente(rutaBase, destino) {
     // Cargar CSS si existe
     const css = document.createElement('link');
     css.rel = 'stylesheet';
-    css.href = `${rutaBase}.css`;
+    css.href = `${rutaBase}/style.css`;
     css.onerror = () => {}; // Silencioso
     document.head.appendChild(css);
 
     // Cargar JS si existe
-    const js = await fetch(`${rutaBase}.js`);
+    const js = await fetch(`${rutaBase}/api.js`);
     if (js.ok) {
       const script = document.createElement('script');
-      script.src = `${rutaBase}.js`;
+      script.src = `${rutaBase}/api.js`;
       script.defer = true;
       document.body.appendChild(script);
     }
@@ -59,4 +59,4 @@ window.Sistema = {
 };
 
 
-cargarComponente("web/web", "sitio-web");
+cargarComponente("web", "web");

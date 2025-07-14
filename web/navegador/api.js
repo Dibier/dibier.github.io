@@ -16,7 +16,7 @@ document.addEventListener("click", (e) => {
   e.preventDefault();
   const nombre = link.dataset.componente;
 
-  Sistema.cargarComponente(`web/contenido/${nombre}/${nombre}`, "main");
+  Sistema.cargarComponente(`web/contenido/${nombre}`, "main");
   location.hash = nombre;
   activarEnlaceActivo(nombre);
 });
