@@ -3,7 +3,7 @@
 // Cargar componente HTML, CSS y JS
 async function cargarComponente(rutaBase, destino) {
   try {
-    const res = await fetch(`${rutaBase}/index.html`);
+    const res = await fetch(`${rutaBase}/component.html`);
     const html = await res.text();
 
     const contenedor = (typeof destino === 'string')
@@ -25,7 +25,11 @@ async function cargarComponente(rutaBase, destino) {
       const script = document.createElement('script');
       script.src = `${rutaBase}/api.js`;
       script.defer = true;
-      document.body.appendChild(script);
+
+      const apisContainer = document.querySelector("apis");
+      if (apisContainer) {
+        apisContainer.appendChild(script);
+      }
     }
 
     // Renderizar fórmulas si MathJax ya está listo
