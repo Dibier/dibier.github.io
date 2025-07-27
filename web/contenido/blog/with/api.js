@@ -1,0 +1,1 @@
+cargarComponente("web/pie", "footer");
