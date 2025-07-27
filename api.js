@@ -37,11 +37,7 @@ async function loadComponentJs(basePath) {
       const scriptElement = document.createElement('script');
       scriptElement.src = `${basePath}/api.js`;
       scriptElement.defer = true;
-
-      const apisContainer = document.querySelector("apis");
-      if (apisContainer) {
-        apisContainer.appendChild(scriptElement);
-      }
+      document.head.appendChild(scriptElement);
     }
   } catch (e) {
     throw new Error(`Error in loadComponentJs for "${basePath}": ${e.message}`);
