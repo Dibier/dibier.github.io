@@ -1,8 +1,40 @@
-<entrada-blog></entrada-blog>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entradas</title>
+  <!-- Establece la base para todas las rutas relativas -->
+  <base href="../../../../../" />
 
-<div id="modal-entrada" class="oculto">
-  <div id="contenido-entrada"></div>
-  <button id="cerrar-modal">← Volver</button>
-</div>
+  <!-- Icono del sitio -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Tipografía EB Garamond -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+
+  <!-- Hojas de estilo principales -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="web/style.css" />
+  <link rel="stylesheet" href="web/contenido/blog/entradas/style.css" />
+
+  <!-- Lógica de visualización matemática -->
+  <script src="with/mathjax.js" defer></script>
+
+  <!-- Microframework general -->
+  <script src="with/framework.js" defer></script>
+
+  <!-- Lógica específica de este componente -->
+  <script src="web/contenido/blog/entradas/api.js" defer></script>
+  <script src="web/contenido/blog/entradas/with/api.js" defer></script>
+</head>
+<body>
+  <main>
+    <entrada-blog></entrada-blog>
+  </main>
+  <footer></footer>
+</body>
+</html>
+
 
 
