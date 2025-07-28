@@ -1,1 +1,1 @@
-cargarComponente("web/contenido/blog/entradas/triangulos-causales", "entrada-blog");
+//cargarComponente("web/contenido/blog/entradas/triangulos-causales", "entrada-blog");
