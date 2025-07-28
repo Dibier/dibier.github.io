@@ -6,11 +6,15 @@ async function loadComponentHtml(basePath, target) {
     const response = await fetch(`${basePath}/index.html`);
     const htmlContent = await response.text();
 
+    const tmpDocument = document.createElement("div");
+    tmpDocument.innerHTML = htmlContent;
+    console.log(target, tmpDocument.querySelector("main"));
+
     const container = (typeof target === 'string')
       ? document.querySelector(target)
       : target;
 
-    container.innerHTML = htmlContent;
+    container.innerHTML = tmpDocument.querySelector("main").innerHTML;
   } catch (e) {
     throw new Error(`Error in loadComponentHtml for "${basePath}": ${e.message}`);
   }

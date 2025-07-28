@@ -1,2 +1,4 @@
 // Initial load
-cargarComponente("web", "web");
+cargarComponente("web/pie", "footer");
+cargarComponente("web/contenido/blog", "main");
+cargarComponente("web/navegador", "nav");
