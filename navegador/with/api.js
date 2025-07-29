@@ -1,1 +1,1 @@
-cargarComponente("web/pie", "footer");
+cargarComponente("pie", "footer");
