@@ -1,1 +1,1 @@
-cargarComponente("web/contenido/blog/entradas", "entradas-blog");
+cargarComponente("blog/entradas", "entradas-blog");
