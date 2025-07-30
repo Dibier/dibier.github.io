@@ -1,2 +1,2 @@
 cargarComponente("pie", "footer");
-cargarComponente("navegador", "nav");
+cargarComponente("encabezado", "header");

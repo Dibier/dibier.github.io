@@ -1,1 +1,1 @@
-cargarComponente("navegador", "nav");
+cargarComponente("encabezado", "header");
