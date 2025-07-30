@@ -69,11 +69,11 @@ footer a:hover {
 }
 
 header {
-  min-height: 150px; /* Ajusta según tu diseño */
+  min-height: 160px; /* Ajusta según tu diseño */
   animation: fadeIn 0.1s ease-in-out;
 }
 
 main {
-  min-height: 500px; /* Ajusta también según tu contenido medio */
+  min-height: 550px; /* Ajusta también según tu contenido medio */
   animation: fadeIn 0.5s ease-in-out;
 }
