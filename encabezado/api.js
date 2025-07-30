@@ -1,0 +1,1 @@
+cargarComponente("encabezado/navegador","nav");

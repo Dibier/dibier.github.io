@@ -61,3 +61,19 @@ footer a:hover {
 .main-nav a:hover {
   color: #0077cc; /* Azul suave al pasar el mouse */
 }
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+header {
+  min-height: 150px; /* Ajusta según tu diseño */
+  animation: fadeIn 0.1s ease-in-out;
+}
+
+main {
+  min-height: 500px; /* Ajusta también según tu contenido medio */
+  animation: fadeIn 0.3s ease-in-out;
+}
