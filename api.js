@@ -1,4 +1,4 @@
 // Initial load
 cargarComponente("encabezado", "header");
-cargarComponente("blog", "main");
+cargarComponente("escritos", "main");
 cargarComponente("pie", "footer");

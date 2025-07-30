@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entradas</title>
   <!-- Establece la base para todas las rutas relativas -->
-  <base href="../../" />
+  <base href="../" />
 
   <!-- Icono del sitio -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -15,7 +15,7 @@
 
   <!-- Hojas de estilo principales -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="blog/entradas/style.css" />
+  <link rel="stylesheet" href="escritos/style.css" />
 
   <!-- Lógica de visualización matemática -->
   <script src="with/mathjax.js" defer></script>
@@ -24,12 +24,13 @@
   <script src="with/framework.js" defer></script>
 
   <!-- Lógica específica de este componente -->
-  <script src="blog/entradas/api.js" defer></script>
-  <script src="blog/entradas/with/api.js" defer></script>
+  <script src="escritos/api.js" defer></script>
+  <script src="escritos/with/api.js" defer></script>
 </head>
 <body>
   <header><nav class="main-nav"></nav></header>
   <main>
+    <h2>Blog</h2>
     <entrada-blog>
       <titulo-entrada>Trigonoanálisis Causal</titulo-entrada>
 
@@ -38,7 +39,7 @@
       </prevista-entrada>
 
       <fecha-entrada>Julio 11 del 2025</fecha-entrada>
-      <a href="blog/entradas/triangulos-causales/" class="entrada-link">Leer más</a>
+      <a href="escritos/triangulos-causales/" class="entrada-link">Leer más</a>
     </entrada-blog>
   </main>
   <footer></footer>
