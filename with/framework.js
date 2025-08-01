@@ -8,13 +8,13 @@ async function loadComponentHtml(basePath, target) {
 
     const tmpDocument = document.createElement("div");
     tmpDocument.innerHTML = htmlContent;
-    console.log(target, tmpDocument.querySelector("main"));
+    console.log(target, tmpDocument.querySelector(".component-html"));
 
     const container = (typeof target === 'string')
       ? document.querySelector(target)
       : target;
 
-    container.innerHTML = tmpDocument.querySelector("main").innerHTML;
+    container.innerHTML = tmpDocument.querySelector(".component-html").innerHTML;
   } catch (e) {
     throw new Error(`Error in loadComponentHtml for "${basePath}": ${e.message}`);
   }
