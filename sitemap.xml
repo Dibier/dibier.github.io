@@ -5,11 +5,11 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://dibier.github.io/web/contenido/info/</loc>
+    <loc>https://dibier.github.io/info/</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://dibier.github.io/web/contenido/blog/entradas/triangulos-causales</loc>
+    <loc>https://dibier.github.io/escritos/triangulos-causales/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
