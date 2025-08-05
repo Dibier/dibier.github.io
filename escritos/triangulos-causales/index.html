@@ -71,12 +71,13 @@
       <h2>Elementos de Trigonoanálisis</h2>
 
       <p>
-        Antes de pasar a las justificaciones de por qué estos ejemplos son triángulos causales, es importante establecer algunos principios útiles sobre las mismos. En primer lugar debe definirse el espacio causal sobre el cual el triángulo opera o está sumergido. Podemos definir un espacio causal como un conjunto de fenómenos que interactúan entre sí de forma causal. Básicamente es un conjunto \(F\) cuyos miembros llamamos fenómenos, y una relación de causalidad \( \Rightarrow \) (léase "causa a") sobre los subconjuntos de \(F\) de manera que:
+        Antes de pasar a las justificaciones de por qué estos ejemplos son triángulos causales, es importante establecer algunos principios útiles sobre las mismos. En primer lugar debe definirse el espacio causal sobre el cual el triángulo opera o está sumergido. Podemos definir un espacio causal como un conjunto de fenómenos que interactúan entre sí de forma causal. Básicamente es un conjunto \(F\) cuyos miembros llamamos fenómenos, y una relación de causalidad de ser consecuencia entre los subconjuntos de \(F\) de manera que:
       </p>
 
       <ol>
-        <li>Si \(B\) es subconjunto de \(A\), entonces \(A \Rightarrow B\).</li>
-        <li>Si \(A \Rightarrow B\) y \(B \Rightarrow C\), entonces \(A \Rightarrow C\).</li>
+        <li>Cada fenómeno de \(A\) es consecuencia de \(A\).</li>
+        <li>Si cada fenómeno de \(A\) es una consecuencia de \(B\), entonces \(A\) es consecuencia de \(B\).</li>
+        <li>Si \(A\) es consecuencia de \(B\), cada consecuencia de \(A\) es consecuencia de \(B\).</li>
       </ol>
 
       <p>
@@ -88,8 +89,12 @@
       </p>
 
       <p>
-        Ya con estas dos condiciones, se puede proceder con la prueba, la cual consiste en tres argumentaciones intercambiando los vértices: para un tríangulo con fenómenos \(a\), \(b\) y \(c\), debe probarse \[a, b \Rightarrow c,\] \[b, c \Rightarrow a,\] \[a, c\Rightarrow b.\]
+        Ya con estas dos condiciones, se puede proceder con la prueba, la cual consiste en tres argumentaciones intercambiando los vértices: para un tríangulo con fenómenos \(a\), \(b\) y \(c\), debe probarse:
       </p>
+      <ol>
+        <li>\(a\) es consecuencia de \(\{b, c\}\).</li>
+        <li>\(b\) es consecuencia de \(\{a, c\}\).</li>
+        <li>\(c\) es consecuencia de \(\{a, b\}\).</li>
 
       <h2>Signo, Objeto e Interpretación</h2>
 
