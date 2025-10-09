@@ -1,20 +1,30 @@
 // Microframework Dibier: index.js
 
-// Load and inject HTML into a target container
-async function loadComponentHtml(basePath, target) {
+
+async function fetchHtmlContent(basePath) {
   try {
     const response = await fetch(`${basePath}/index.html`);
+    if(!response.ok) throw new Error(`Failed to fetch HTML from ${basePath}/index.html`);
+
     const htmlContent = await response.text();
+    return htmlContent;
 
-    const tmpDocument = document.createElement("div");
-    tmpDocument.innerHTML = htmlContent;
-    console.log(target, tmpDocument.querySelector(".component-html"));
+  } catch (e) {
+    throw new Error(`Error in fetchHtmlContent for "${basePath}": ${e.menssage}`);
+  }
+}
 
-    const container = (typeof target === 'string')
-      ? document.querySelector(target)
-      : target;
+// Load and inject HTML into a target container
+async function loadComponentHtml(basePath, selector) {
+  try {
+    
+    const htmlContent = await fetchHtmlContent(basePath);
+    const tmpElement = document.createElement("div");
+    tmpElement.innerHTML = htmlContent;
 
-    container.innerHTML = tmpDocument.querySelector(".component-html").innerHTML;
+    const container = document.querySelector(selector);
+    container.innerHTML = tmpElement.querySelector(".component-html").innerHTML;
+
   } catch (e) {
     throw new Error(`Error in loadComponentHtml for "${basePath}": ${e.message}`);
   }
