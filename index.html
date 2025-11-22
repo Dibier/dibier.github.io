@@ -20,7 +20,6 @@
 
   <!--Main Styles-->
   <link href="style.css" rel="stylesheet">
-  <link href="escritos/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -36,96 +35,53 @@
   <main class="component-html">
     <h2>Blog</h2>
 
-    <entrada-blog>
-      <entrada-enlace src="escritos/horizonte">
-        <titulo-entrada>
-          Horizonte
-        </titulo-entrada>
+    <article class="entrada" data-tags="poesía avance horizonte reflexión">
+      <a href="escritos/horizonte/">
+        <h3>Horizonte</h3>
+      </a>
+      <p>Poema sobre el avance.</p>
+      <time datetime="2025-10-19">Octubre 19 del 2025</time>
+    </article>
 
-        <prevista-entrada>
-          Poema sobre el avance.
-        </prevista-entrada>
+    <article class="entrada" data-tags="poesía resiliencia potencial reflexión">
+      <a href="escritos/potencial/">
+        <h3>Potencial</h3>
+      </a>
+      <p>Poema sobre la resiliencia.</p>
+      <time datetime="2025-10-12">Octubre 12 del 2025</time>
+    </article>
 
-        <fecha-entrada>
-          <time datetime="2025-10-19">Octubre 19 del 2025</time>
-        </fecha-entrada>
-      </entrada-enlace>
-      <a href="escritos/horizonte/" class="entrada-link">Leer más</a>
-    </entrada-blog>
+    <article class="entrada" data-tags="poesía crecer humildad reflexión">
+      <a href="escritos/humildad/">
+        <h3>Humildad</h3>
+      </a>
+      <p>Oración para crecer.</p>
+      <time datetime="2025-09-30">Septiembre 30 del 2025</time>
+    </article>
 
+    <article class="entrada" data-tags="matemátcias teoría conjuntos">
+      <a href="escritos/conjuntos/">
+        <h3>Teoría de Conjuntos</h3>
+      </a>
+      <p>Puede decirse que la teoría de conjuntos es la base fundamental del pensamiento moderno. Es la estructura que subyace a la lógica, la matemática, la filosofía y muchas otras disciplinas. En este sentido, es una herramienta esencial para comprender el mundo.</p>
+      <time datetime="2025-08-11">Agosto 11 del 2025</time>
+    </article>
 
-    <entrada-blog>
-      <entrada-enlace src="escritos/potencial">
-        <titulo-entrada>
-          Potencial
-        </titulo-entrada>
+    <article class="entrada" data-tags="filosofía triángulos causales emociones">
+      <a href="escritos/emociones/">
+        <h3>Un mapa emocional</h3>
+      </a>
+      <p>Saber reconocer emociones es una habilidad esencial para la vida. Aquí exploraremos un mapa emocional aplicando tríangulos causales.</p>
+      <time datetime="2025-08-11">Agosto 11 del 2025</time>
+    </article>
 
-        <prevista-entrada>
-          Poema sobre la resiliencia.
-        </prevista-entrada>
-
-        <fecha-entrada>
-          <time datetime="2025-10-12">Octubre 12 del 2025</time>
-        </fecha-entrada>
-      </entrada-enlace>
-      <a href="escritos/potencial/" class="entrada-link">Leer más</a>
-    </entrada-blog>
-
-    <entrada-blog>
-      <entrada-enlace src="escritos/humildad">
-        <titulo-entrada>
-          Humildad
-        </titulo-entrada>
-
-        <prevista-entrada>
-          Oración para crecer.
-        </prevista-entrada>
-
-        <fecha-entrada>
-          <time datetime="2025-09-30">Septiembre 30 del 2025</time>
-        </fecha-entrada>
-      </entrada-enlace>
-      <a href="escritos/humildad/" class="entrada-link">Leer más</a>
-    </entrada-blog>
-
-    <entrada-blog>
-      <entrada-enlace src="escritos/conjuntos">
-        <titulo-entrada>Teoría de Conjuntos</titulo-entrada>
-
-        <prevista-entrada>
-          Puede decirse que la teoría de conjuntos es la base fundamental del pensamiento moderno. Es la estructura que subyace a la lógica, la matemática, la filosofía y muchas otras disciplinas. En este sentido, es una herramienta esencial para comprender el mundo.
-        </prevista-entrada>
-
-        <fecha-entrada>Agosto 11 del 2025</fecha-entrada>
-      </entrada-enlace>
-      <a href="escritos/conjuntos/" class="entrada-link">Leer más</a>
-    </entrada-blog>
-
-    <entrada-blog>
-      <entrada-enlace src="escritos/emociones">
-        <titulo-entrada>Un Mapa Emocional</titulo-entrada>
-
-        <prevista-entrada>
-          Saber reconocer emociones es una habilidad esencial para la vida. Aquí exploraremos un mapa emocional aplicando tríangulos causales.
-        </prevista-entrada>
-
-        <fecha-entrada>Agosto 11 del 2025</fecha-entrada>
-      </entrada-enlace>
-      <a href="escritos/emociones/" class="entrada-link">Leer más</a>
-    </entrada-blog>
-    
-    <entrada-blog>
-      <entrada-enlace src="escritos/triangulos-causales">
-        <titulo-entrada>Trigonoanálisis Causal</titulo-entrada>
-
-        <prevista-entrada>
-          En problemáticas no aisladas, los fenómenos son nudos en redes de relaciones interdependientes. Los triángulos operan como unidades mínimas de causalidad, capaces de abrir rutas inesperadas para navegar la complejidad.
-        </prevista-entrada>
-
-        <fecha-entrada>Julio 11 del 2025</fecha-entrada>
-      </entrada-enlace>
-      <a href="escritos/triangulos-causales/" class="entrada-link">Leer más</a>
-    </entrada-blog>
+    <article class="entrada" data-tags="filosofía triángulos causales">
+      <a href="escritos/triangulos-causales/">
+        <h3>Trigonoanálisis causal</h3>
+      </a>
+      <p>En problemáticas no aisladas, los fenómenos son nudos en redes de relaciones interdependientes. Los triángulos operan como unidades mínimas de causalidad, capaces de abrir rutas inesperadas para navegar la complejidad.</p>
+      <time datetime="2025-07-11">Julio 11 del 2025</time>
+    </article>
   </main>
   <footer>
     <p>

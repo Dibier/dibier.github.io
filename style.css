@@ -1,3 +1,5 @@
+/* ------------------ General ------------------ */
+
 body {
   font-family: 'EB Garamond', serif;
   font-size: 18px;
@@ -5,9 +7,130 @@ body {
   max-width: 800px;
   margin: 2rem auto;
   padding: 0 2rem;
-  background-color: #fafafa;
+  background-color: #f8f8f8;
   color: #111;
 }
+
+/* Suavidad tipo documento */
+h1, h2, h3 {
+  font-weight: 500;
+  color: #222;
+}
+
+/* ------------------ Navegación ------------------ */
+
+.main-nav {
+  margin-top: 1.2rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.25s ease;
+}
+
+.main-nav a:hover {
+  color: #0077cc;
+}
+
+/* Fade suave */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+header {
+  min-height: 160px;
+  animation: fadeIn 0.15s ease-in-out;
+}
+
+main {
+  min-height: 550px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* ------------------ Listado de Entradas ------------------ */
+
+.entrada {
+  padding: 1.3rem 0;
+  border-bottom: 1px dashed #bfbfbf;
+  position: relative;
+  transition: background-color 0.25s ease;
+}
+
+.entrada:last-child {
+  border-bottom: none;
+}
+
+/* Un grís tenue de fondo al pasar */
+.entrada:hover {
+  background-color: #f1f1f1;
+}
+
+/* ------------------ Título con enlace (el estilo clave) ------------------ */
+
+.entrada h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.entrada h3 a {
+  text-decoration: none;
+  color: #1a1a1a;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2px;
+  transition: color 0.25s ease, border-color 0.25s ease;
+  position: relative;
+}
+
+/* Marca azul discreta al lado */
+.entrada h3 a::before {
+  content: "";
+  height: 100%;
+  width: 4px;
+  background-color: #0077cc;
+  position: absolute;
+  left: -10px;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* Hover coherente con tu recuerdo visual */
+.entrada h3 a:hover {
+  color: #005a9c;
+  border-color: #005a9c;
+}
+
+.entrada h3 a:hover::before {
+  opacity: 1;
+}
+
+/* ------------------ Preview + fecha ------------------ */
+
+.entrada p {
+  margin: 0.4rem 0 0.6rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.entrada time {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* ------------------ Pie de página ------------------ */
 
 footer {
   font-size: 0.9rem;
@@ -23,57 +146,14 @@ footer {
 footer a {
   color: #333;
   text-decoration: none;
-  font-style: normal;
 }
 
 footer a:hover {
   text-decoration: underline;
 }
 
+/* ------------------ MathJax ajuste ------------------ */
 
-
-
-.main-nav {
-  margin-top: 1rem;
-}
-
-.main-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 3rem; /* Espaciado entre los enlaces */
-}
-
-.main-nav li {
-  margin: 0;
-}
-
-.main-nav a {
-  text-decoration: none;
-  font-weight: bold;
-  font-family: inherit;
-  color: #333;
-  font-size: 1.1rem;
-  transition: color 0.3s;
-}
-
-.main-nav a:hover {
-  color: #0077cc; /* Azul suave al pasar el mouse */
-}
-
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-
-header {
-  min-height: 160px; /* Ajusta según tu diseño */
-  animation: fadeIn 0.1s ease-in-out;
-}
-
-main {
-  min-height: 550px; /* Ajusta también según tu contenido medio */
-  animation: fadeIn 0.5s ease-in-out;
+.MathJax {
+  font-size: 1.1em;
 }
