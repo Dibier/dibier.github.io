@@ -1,1 +1,0 @@
-cargarComponente("pie","footer");
