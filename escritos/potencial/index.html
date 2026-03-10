@@ -2,7 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Potencial</title>
 
   <!-- Establece la base para todas las rutas relativas -->
@@ -16,38 +18,30 @@
 
   <!-- Hojas de estilo principales -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="escritos/style.css" />
 
   <!-- Lógica de visualización matemática -->
   <script src="with/mathjax.js" defer></script>
-
-  <!-- Microframework general -->
-  <script src="with/framework.js" defer></script>
-
-  <!-- Lógica específica de este componente -->
-  <script src="escritos/potencial/with/api.js" defer></script>
 </head>
 <body>
   <header>
-    <nav class="main-nav"></nav>
+    <h2>Dibier Marín Peña</h2>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="">Blog</a></li>
+        <li><a href="info">Sobre mí</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section class="component-html">
-      <titulo-entrada>
-        Potencial
-      </titulo-entrada>
+  <article class="entrada" data-tags="poesía">
+    <header>
+      <h1>Potencial</h1>
+      <p>Poema sobre la resiliencia.</p>
+      <time datetime="2025-10-12">Octubre 12 del 2025</time>
+    </header>
 
-      <prevista-entrada>
-        Poema sobre la resiliencia.
-      </prevista-entrada>
-
-      <fecha-entrada>
-        <time datetime="2025-10-12">Octubre 12 del 2025</time>
-      </fecha-entrada>
-    </section>
-    
-    <cuerpo-entrada>
+    <section>
       <p>
         Virtual, mi alma<br />
         tiene en segundo plano voluntad.<br />
@@ -58,9 +52,36 @@
         La lucidez en los quiebres<br />
         es red de sostén<br />
         cuando —finalmente— no lo consigo.
-      </p>     
-    </cuerpo-entrada>
+      </p>  
+    </section>
+  </article>
   </main>
-  <footer></footer>
+  <footer>
+    <p>
+      © 2025 Dibier Marín — Esta obra está bajo una licencia
+      <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="license noopener noreferrer">
+        Creative Commons Atribución-SinDerivadas 4.0 Internacional
+      </a>.
+    </p>
+    <p>
+      <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="license noopener noreferrer">
+        <img alt="Licencia Creative Commons" style="border-width:0"
+             src="https://licensebuttons.net/l/by-nd/4.0/88x31.png" />
+      </a>
+    </p>
+    <p>
+      Puedes compartir este contenido libremente, incluso con monetización
+      (por ejemplo en YouTube o plataformas educativas), siempre que cites adecuadamente al autor
+      y no modifiques la obra original sin consentimiento.
+    </p>
+    <p>
+      Este sitio utiliza 
+      <a href="https://www.mathjax.org/" target="_blank" rel="noopener noreferrer">MathJax</a> 
+      para la representación de fórmulas LaTeX,
+      y la tipografía 
+      <a href="https://fonts.google.com/specimen/EB+Garamond" target="_blank" rel="noopener noreferrer">EB Garamond</a> 
+      proporcionada por Google Fonts.
+    </p>
+  </footer>
 </body>
 </html>
