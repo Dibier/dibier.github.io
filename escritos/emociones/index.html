@@ -16,35 +16,32 @@
 
   <!-- Hojas de estilo principales -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="escritos/style.css" />
 
   <!-- Lógica de visualización matemática -->
   <script src="with/mathjax.js" defer></script>
-
-  <!-- Microframework general -->
-  <script src="with/framework.js" defer></script>
-
-  <!-- Lógica específica de este componente -->
-  <script src="escritos/emociones/with/api.js" defer></script>
 </head>
 <body>
   <header>
-    <nav class="main-nav"></nav>
+    <h2>Dibier Marín Peña</h2>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="">Blog</a></li>
+        <li><a href="info">Sobre mí</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section class="component-html">
-      <titulo-entrada>Un Mapa Emocional</titulo-entrada>
-
-      <prevista-entrada>
-        Saber reconocer emociones es una habilidad esencial para la vida. Aquí exploraremos un mapa emocional aplicando tríangulos causales.
-      </prevista-entrada>
-
-      <fecha-entrada>Agosto 11 del 2025</fecha-entrada>
-    </section>
-    
-    <cuerpo-entrada>
-      <h1>El tríangulo causal temporal de la sospecha</h1>
+    <article class="entrada" data-tags="filosofía triangulos causales">
+      <header>
+        <h1>Emociones</h1>
+        <p>
+          Saber reconocer emociones es una habilidad esencial para la vida. Aquí exploraremos un mapa emocional aplicando tríangulos causales.
+        </p>
+        <time datetime="2025-08-11">Agosto 11 del 2025</time>
+      </header>
+      <section>
+        <h1>El tríangulo causal temporal de la sospecha</h1>
 
       <p>
         La sospecha es la emoción primaria de posibilidad. Coloquialmente tiene una connotación negativa relacionada a un acontecimiento amenazante. Aquí no le daremos ese matiz y admitiremos que una sospecha puede ser de carácter positivo. Esto nos permite clasificarlas en dos grupos: positivas y negativas.
@@ -72,9 +69,35 @@
 
       <p>De otro lado, el indeseo también es un operador continuo por contagio emocional. Aquí, un intento de ver lógica no es concluyente y de hecho muestra como aquí hay irracional. Con este hecho, da lugar a tres emociones que llamaremos, tristeza, disgusto e incentidumbre, las cuales desde luego son un tríangulo causal y es el tríangulo de disolución del triángulo contento, alegría y confianza.</p>
 
-      
-    </cuerpo-entrada>
+      </section>
+    </article>
   </main>
-  <footer></footer>
+  <footer>
+    <p>
+      © 2025 Dibier Marín — Esta obra está bajo una licencia
+      <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="license noopener noreferrer">
+        Creative Commons Atribución-SinDerivadas 4.0 Internacional
+      </a>.
+    </p>
+    <p>
+      <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="license noopener noreferrer">
+        <img alt="Licencia Creative Commons" style="border-width:0"
+             src="https://licensebuttons.net/l/by-nd/4.0/88x31.png" />
+      </a>
+    </p>
+    <p>
+      Puedes compartir este contenido libremente, incluso con monetización
+      (por ejemplo en YouTube o plataformas educativas), siempre que cites adecuadamente al autor
+      y no modifiques la obra original sin consentimiento.
+    </p>
+    <p>
+      Este sitio utiliza 
+      <a href="https://www.mathjax.org/" target="_blank" rel="noopener noreferrer">MathJax</a> 
+      para la representación de fórmulas LaTeX,
+      y la tipografía 
+      <a href="https://fonts.google.com/specimen/EB+Garamond" target="_blank" rel="noopener noreferrer">EB Garamond</a> 
+      proporcionada por Google Fonts.
+    </p>
+  </footer>
 </body>
 </html>
