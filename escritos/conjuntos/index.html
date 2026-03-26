@@ -34,7 +34,7 @@
   <main>
   <article class="entrada" data-tags="filosofía triángulos causales">
     <header>
-      <h1>Teoría de Conjuntos</h1>
+      <h1>Teoría de conjuntos</h1>
       <p>Puede decirse que la teoría de conjuntos es la base fundamental del pensamiento moderno. Es la estructura que subyace a la lógica, la matemática, la filosofía y muchas otras disciplinas. En este sentido, es una herramienta esencial para comprender el mundo.</p>
       <time datetime="2025-08-11">Agosto 11 del 2025</time>
     </header>
@@ -49,20 +49,30 @@
       <b>Postulado de Inclusión:</b> <i>\(a\subseteq b\) si y solo si cada elemento de \(a\) es elemento de \(b\).</i>
     </p>
     <p>
-      <b>Postulado de Extension:</b> <i>\(a = b\) si y solo si \(a\subseteq b\) y \(b\subseteq a\).</i>
+      <b>Postulado de extensión:</b> <i>\(a = b\) si y solo si \(a\subseteq b\) y \(b\subseteq a\).</i>
     </p>
     <p>
-      <b>Definición de conjunto Propio y conjunto Elemental:</b> <i>Un conjunto \(a\) es propio si y solo si \(a\in b\) para algún conjunto \(b\). Un conjunto es propio si y solo si no es elemental.</i>
+      <b>Definición de conjunto propio y conjunto Elemental:</b> <i>Un conjunto \(a\) es propio si y solo si \(a\in b\) para algún conjunto \(b\). Un conjunto es propio si y solo si no es elemental.</i>
     </p>
     <p>
       Una propiedad \(p\) es una correspondencia que a cada conjunto \(x\) le asigna un valor de verdad \(0\) falso o \(1\) verdadero. Un conjunto \(a\) es de propiedad \(p\) si \(p(a)\) es verdadero, en caso contrario, \(p(a)\) es falso y se dice, que \(p\) no es una propiedad de \(a\). Cada conjunto \(a\) se puede entender como una propiedad, en el sentido de que \(x\) es de propiedad \(a\) si y solo si \(x\in a\)
     </p>
     <p>
-      <b>Postulado de Comprensión:</b> <i>Dada una propiedad \(p\) existe un conjunto \(a\) tal que \(x\in a\) si y solo si \(x\) es elemental y es de propiedad \(p\).</i>
+      <b>Postulado de comprensión:</b> <i>Dada una propiedad \(p\) existe un conjunto \(a\) tal que \(x\in a\) si y solo si \(x\) es elemental y es de propiedad \(p\).</i>
     </p>
     <p>
-      <b>Teorema de Unicidad de Comprensión:</b> <i>Existe un único conjunto de elementos que cumplen \(p\) para cada propiedad \(p\)</i><br>
+      <b>Teorema de unicidad de comprensión:</b> <i>Existe un único conjunto de elementos que cumplen \(p\) para cada propiedad \(p\)</i><br>
       <i>Demostración:</i> Si \(a\) y \(b\) son dos conjuntos por comprensión de \(p\), veamos que \(a\subseteq b\). Entonces, si \(x\in a\), \(x\) cumple \(p\) y es elemental. Por tanto \(x\in b\). De forma similar, \(b\subseteq a\) y por el postulado de extensión, \(a = b\).
+    </p>
+    <p>
+      <b>Definición de conjuntos por comprensión:</b> <i>El conjunto de elementos que cumplen una propiedad \(p\) se denota como \[\{x:x\text{ cumple }p\}.\]</i>
+    </p>
+    <p>
+      El postulado de comprensión es el principal caballito de batalla para la construcción de conjuntos, como se podrá constatar en reiteradas oportunidades. De momento veamos un resultado debido a Russell que muestra las limitaciones de la aplicación de la teoría de conjuntos.
+    </p>
+    <p>
+      <b>Teorema paradoja de Russell:</b> <i>Existe un conjunto propio.</i><br>
+      <i>Demostración:</i> Sea \(r = \{x:x \text{ no es elemento de sí mismo}\}\). Veamos por contradicción que \(r\) es propio; es decir, suponiendo que es elemental. Si \(r\) es elemento de \(r\), por definición, no lo sería. Luego \(r\) no es elemento de sí mismmo o \(r\) no es elemental. Si \(r\) fuera elemental, entonces \(r\in r\) contradiciendo que \(r\) no es elemento de sí mismo. Por tanto, \(r\) es un conjunto propio.
     </p>
   </section>
   </article>
