@@ -46,13 +46,13 @@
       Un conjunto es una colección de objetos. Denotamos los conjuntos y sus elementos con cualquier símbolo, especialmente letras, siempre y cuando no produzca ambigüedad en el contexto inmediato de su uso. Reservamos el símbolo \(\in\) para indicar la expresión "es un elemento de". Así, \(a\in b\) siginifica "\(a\) es un elemento de \(b\)". De forma similar, se reservan \(\subseteq \) como "es un suconjunto de" y \(=\) como "es igual a".
     </p>
     <p>
-      <b>Postulado de Inclusión:</b> <i>\(a\subseteq b\) si y solo si cada elemento de \(a\) es elemento de \(b\).</i>
+      <b>Postulado de inclusión:</b> <i>\(a\subseteq b\) si y solo si cada elemento de \(a\) es elemento de \(b\).</i>
     </p>
     <p>
       <b>Postulado de extensión:</b> <i>\(a = b\) si y solo si \(a\subseteq b\) y \(b\subseteq a\).</i>
     </p>
     <p>
-      <b>Definición de conjunto propio y conjunto Elemental:</b> <i>Un conjunto \(a\) es propio si y solo si \(a\in b\) para algún conjunto \(b\). Un conjunto es propio si y solo si no es elemental.</i>
+      <b>Definición de conjunto propio y conjunto elemental:</b> <i>Un conjunto \(a\) es propio si y solo si \(a\in b\) para algún conjunto \(b\). Un conjunto es propio si y solo si no es elemental.</i>
     </p>
     <p>
       Una propiedad \(p\) es una correspondencia que a cada conjunto \(x\) le asigna un valor de verdad \(0\) falso o \(1\) verdadero. Un conjunto \(a\) es de propiedad \(p\) si \(p(a)\) es verdadero, en caso contrario, \(p(a)\) es falso y se dice, que \(p\) no es una propiedad de \(a\). Cada conjunto \(a\) se puede entender como una propiedad, en el sentido de que \(x\) es de propiedad \(a\) si y solo si \(x\in a\)
@@ -74,7 +74,19 @@
       <b>Teorema paradoja de Russell:</b> <i>Existe un conjunto propio.</i><br>
       <i>Demostración:</i> Sea \(r = \{x:x \text{ no es elemento de sí mismo}\}\). Veamos por contradicción que \(r\) es propio; es decir, suponiendo que es elemental. Si \(r\) es elemento de \(r\), por definición, no lo sería. Luego \(r\) no es elemento de sí mismmo o \(r\) no es elemental. Si \(r\) fuera elemental, entonces \(r\in r\) contradiciendo que \(r\) no es elemento de sí mismo. Por tanto, \(r\) es un conjunto propio.
     </p>
-  </section>
+    <p>
+      La paradoja de Russel no se refiere a la existencia de conjuntos elementales. Para que la teoría de conjuntos sea coherente, los requerimos. Es necesario hacer esto a modo de postulado.
+    </p>
+    <p>
+      <b>Postulado de Elementos:</b> <i>Existe un conjunto elemental.</i>
+    </p>
+    <p>
+      Debido a la centralidad de los conjuntos elementales, esperaremos no tocar en lo posible a los conjuntos propios, aunque se puede hablar de ellos en la teoría. Los siguientes postulados, son para garantizar o dar permiso de la construcción de conjuntos que aparecen con frecuencia y es deseable que sean elementales. Un criterio intuitivo para construir conjuntos elementales quizás que pueda orientarnos es que los conjuntos elementales son los conjuntos de tamaño pequeño, mientras que los conjuntos propios, por su parte, son conjuntos de tamaño grande, tan grande que no pueden ser elementos de ningún conjunto.
+    </p>
+    <p>
+      <b>Postulado de Acotación:</b> <i>Un conjunto \(a\) es elemental si y solo si existe un conjunto \(s\) elemental tal que \(x\subseteq s\) para cada \(x\in a\).</i>
+    </p>
+  </section>  
   </article>
   </main>
   <footer>
@@ -82,7 +94,7 @@
       © 2025 Dibier Marín — Esta obra está bajo una licencia
       <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="license noopener noreferrer">
         Creative Commons Atribución-SinDerivadas 4.0 Internacional
-      </a>.
+      </a>
     </p>
     <p>
       <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="license noopener noreferrer">
