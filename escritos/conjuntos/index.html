@@ -52,7 +52,7 @@
       <b>Postulado de extensión:</b> <i>\(a = b\) si y solo si \(a\subseteq b\) y \(b\subseteq a\).</i>
     </p>
     <p>
-      <b>Definición de conjunto propio y conjunto elemental:</b> <i>Un conjunto \(a\) es propio si y solo si \(a\in b\) para algún conjunto \(b\). Un conjunto es propio si y solo si no es elemental.</i>
+      <b>Definición de conjunto elemental y conjunto propio:</b> <i>Un conjunto \(a\) es elemental si y solo si \(a\in b\) para algún conjunto \(b\). Un conjunto es propio si y solo si no es elemental.</i>
     </p>
     <p>
       Una propiedad \(p\) es una correspondencia que a cada conjunto \(x\) le asigna un valor de verdad \(0\) falso o \(1\) verdadero. Un conjunto \(a\) es de propiedad \(p\) si \(p(a)\) es verdadero, en caso contrario, \(p(a)\) es falso y se dice, que \(p\) no es una propiedad de \(a\). Cada conjunto \(a\) se puede entender como una propiedad, en el sentido de que \(x\) es de propiedad \(a\) si y solo si \(x\in a\)
@@ -81,10 +81,17 @@
       <b>Postulado de Elementos:</b> <i>Existe un conjunto elemental.</i>
     </p>
     <p>
-      Debido a la centralidad de los conjuntos elementales, esperaremos no tocar en lo posible a los conjuntos propios, aunque se puede hablar de ellos en la teoría. Los siguientes postulados, son para garantizar o dar permiso de la construcción de conjuntos que aparecen con frecuencia y es deseable que sean elementales. Un criterio intuitivo para construir conjuntos elementales quizás que pueda orientarnos es que los conjuntos elementales son los conjuntos de tamaño pequeño, mientras que los conjuntos propios, por su parte, son conjuntos de tamaño grande, tan grande que no pueden ser elementos de ningún conjunto.
+      Debido a la centralidad de los conjuntos elementales, esperaremos no tocar en lo posible a los conjuntos propios, aunque se puede hablar de ellos en la teoría. Los siguientes postulados, son para garantizar o dar permiso de la construcción de conjuntos que aparecen con frecuencia y es deseable que sean elementales. Un criterio intuitivo para construir conjuntos elementales, que quizás pueda orientarnos, es que los conjuntos elementales son los conjuntos de tamaño pequeño; mientras que los conjuntos propios, por su parte, son conjuntos de tamaño grande, tan grande que no pueden ser elementos de ningún conjunto.
     </p>
     <p>
       <b>Postulado de Acotación:</b> <i>Un conjunto \(a\) es elemental si y solo si existe un conjunto \(s\) elemental tal que \(x\subseteq s\) para cada \(x\in a\).</i>
+    </p>
+    <p>
+      Este postulado, dice, que un conjunto es elemental si y solo si se puede acotar o no supera algún conjunto elemental o si y solo sí está compuesto de partes de un conjunto elemental. En términos de tamaño, esto sugiere la intuición de que si un conjunto es pequeño si y solo sí está hecho de partes de algún conjunto pequeño. El primer resultado es ver, que si un conjunto es pequeño, sus partes o subconjuntos son pequeñas.
+    </p>
+    <p>
+      <b>Teorema de subconjuntos de elementales:</b> <i>Si \(a\subseteq b\) y \(b\) es elemental, entonces \(a\) es elemental.</i> <br>
+      <i>Demostración:</i> Como \(b\) es elemental, existe un conjunto elemental \(s\) tal que \(x\subseteq s\) para cada \(x\in b\). Dado que \(a\subseteq b\), \(x\subseteq s\) para cada \(x\in a\). Con lo cual, en virtud del postulado de acotación, \(a\) es elemental.
     </p>
   </section>  
   </article>
