@@ -78,11 +78,6 @@ main {
   border-bottom: none;
 }
 
-/* Un grís tenue de fondo al pasar */
-.entrada:hover {
-  background-color: #f1f1f1;
-}
-
 /* ------------------ Título con enlace (el estilo clave) ------------------ */
 
 .entrada h3 {
