@@ -84,14 +84,23 @@
       Debido a la centralidad de los conjuntos elementales, esperaremos no tocar en lo posible a los conjuntos propios, aunque se puede hablar de ellos en la teoría. Los siguientes postulados, son para garantizar o dar permiso de la construcción de conjuntos que aparecen con frecuencia y es deseable que sean elementales. Un criterio intuitivo para construir conjuntos elementales, que quizás pueda orientarnos, es que los conjuntos elementales son los conjuntos de tamaño pequeño; mientras que los conjuntos propios, por su parte, son conjuntos de tamaño grande, tan grande que no pueden ser elementos de ningún conjunto.
     </p>
     <p>
-      <b>Postulado de Acotación:</b> <i>Un conjunto \(a\) es elemental si y solo si existe un conjunto \(s\) elemental tal que \(x\subseteq s\) para cada \(x\in a\).</i>
+      <b>Postulado de acotación:</b> <i>Un conjunto \(a\) es elemental si y solo si existe un conjunto \(s\) elemental tal que \(x\subseteq s\) para cada \(x\in a\).</i>
     </p>
     <p>
       Este postulado, dice, que un conjunto es elemental si y solo si se puede acotar o no supera algún conjunto elemental o si y solo sí está compuesto de partes de un conjunto elemental. En términos de tamaño, esto sugiere la intuición de que si un conjunto es pequeño si y solo sí está hecho de partes de algún conjunto pequeño. El primer resultado es ver, que si un conjunto es pequeño, sus partes o subconjuntos son pequeñas.
     </p>
     <p>
-      <b>Teorema de subconjuntos de elementales:</b> <i>Si \(a\subseteq b\) y \(b\) es elemental, entonces \(a\) es elemental.</i> <br>
+      <b>Teorema de subconjuntos elementales:</b> <i>Si \(a\subseteq b\) y \(b\) es elemental, entonces \(a\) es elemental.</i> <br>
       <i>Demostración:</i> Como \(b\) es elemental, existe un conjunto elemental \(s\) tal que \(x\subseteq s\) para cada \(x\in b\). Dado que \(a\subseteq b\), \(x\subseteq s\) para cada \(x\in a\). Con lo cual, en virtud del postulado de acotación, \(a\) es elemental.
+    </p>
+    <p>
+      Así tenemos que un subconjunto de un conjunto elemental es elemento de algún conjunto. ¿Cuales pueden ser los candidatos de este conjunto? El enfoque minimal nos da a el conjunto cuyo único elemento es \(a\), es decir, \[\{a\} =\{x: x = a\}.\] En general, podemos definir, si tenemos un número finido de conjuntos elementales, el conjunto cuyos elementos son precisamente esos conjuntos.
+    </p>
+    <p>
+      <b>Definición de conjunto por extensión:</b> <i>Dado un natural \(n\) y un número finito de conjuntos \(a_1, \ldots, a_n\), el conjunto definido por extensión -o lista- de estos elementos es \[\{a_1,\ldots,a_n\} = \{x: x = a_1, \ldots \text{ o } x = a_n\}.\]</i>
+    </p>
+    <p>
+      Notése, que aunque se ha definido el conjunto por extensión para conjuntos arbitrarios, esta definición tiene sentido únicamente para conjuntos elementales porque \(a\in \{a\}\) siempre, y solo siempre, y cuando \(a\) sea elemental.
     </p>
   </section>  
   </article>
