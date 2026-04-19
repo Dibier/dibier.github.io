@@ -97,7 +97,7 @@
       Así tenemos que un subconjunto de un conjunto elemental es elemento de algún conjunto. ¿Cuales pueden ser los candidatos de este conjunto? El enfoque minimal nos da a el conjunto cuyo único elemento es \(a\), es decir, \[\{a\} =\{x: x = a\}.\] En general, podemos definir, si tenemos un número finido de conjuntos elementales, el conjunto cuyos elementos son precisamente esos conjuntos.
     </p>
     <p>
-      <b>Definición de conjunto por extensión:</b> <i>Dado un natural \(n\) y un número finito de conjuntos \(a_1, \ldots, a_n\), el conjunto definido por extensión -o lista- de estos elementos es \[\{a_1,\ldots,a_n\} = \{x: x\text{ es alguno de los conjuntos } a_1,\ldots, a_n\}.\]</i>
+      <b>Definición de conjunto por extensión:</b> <i>Dado un natural \(n\) y un número finito de conjuntos \(a_1, \ldots, a_n\), el conjunto definido por extensión -o lista- de estos elementos es \[\{a_1,\ldots,a_n\} = \{x: x\text{ es uno de } a_1,\ldots, a_n\}.\]</i>
     </p>
     <p>
       Notése, que aunque se ha definido el conjunto por extensión para conjuntos arbitrarios, esta definición tiene sentido únicamente para conjuntos elementales porque \(a\in \{a\}\) siempre, y solo siempre, y cuando \(a\) sea elemental.
@@ -110,8 +110,14 @@
       <b>Definición de cero:</b> <i>El cero -o conjunto vacío- es \[0 = \{x: x\not = x\}.\]</i>
     </p>
     <p>
-      <b>Teorema del Vacío</b> <i> El cero es un conjunto elemental y para cada conjunto \(a\), \(a\not\in 0\).</i><br>
+      <b>Teorema del vacío</b> <i> El cero es un conjunto elemental y para cada conjunto \(a\), \(a\not\in 0\).</i><br>
       <i>Demostración:</i> Primero veamos que \(0\) carece de elementos. Si \(a\in 0\), entonces \(a\not = a\), lo cual es una contradicción. Ahora, sea \(s\) un conjunto elemental, cuya existencia está postulada. Veamos que \(0\subseteq s\). Si no fuese el caso, existe un elemento \(x\in 0\) que no es elemento de \(s\), contradicción. Por tanto, \(0\) es un conjunto elemental.
+    </p>
+    <p>
+      El número uno es un conjunto con un elemento, ¿cuál podría ser ese elemento?. El candidato más natural es el cero, es decir, \(1=\{0\}\). Esto es lícito, ya que por el resultado anterior, \(0\) es un conjunto elemental. De forma similar, dos es un conjunto con dos elementos, \(2 = \{0, 1\}\). Sin embargo, para que nuestra definición sea correcta, debe debemos garantizar que \(1\) es un conjunto elemental. Esto se hace con el siguiente postulado. 
+    </p>
+    <p>
+      <b>Postulado del tercero:</b> <i>Si \(a\) y \(b\) son conjuntos elementales, existe un conjunto \(c\) elemental tal que \(a\subseteq c\) y \(b\subseteq c\).</i>
     </p>
   </section>  
   </article>
