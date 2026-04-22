@@ -117,7 +117,18 @@
       El número uno es un conjunto con un elemento, ¿cuál podría ser ese elemento?. El candidato más natural es el cero, es decir, \(1=\{0\}\). Esto es lícito, ya que por el resultado anterior, \(0\) es un conjunto elemental. De forma similar, dos es un conjunto con dos elementos, \(2 = \{0, 1\}\). Sin embargo, para que nuestra definición sea correcta, debe debemos garantizar que \(1\) es un conjunto elemental. Esto se hace con el siguiente postulado. 
     </p>
     <p>
-      <b>Postulado del tercero:</b> <i>Si \(a\) y \(b\) son conjuntos elementales, existe un conjunto \(c\) elemental tal que \(a\subseteq c\) y \(b\subseteq c\).</i>
+      <b>Postulado del tercero:</b> <i>Si \(a\) y \(b\) son conjuntos elementales, existe un conjunto \(s\) elemental tal que \(a\subseteq s\) y \(b\subseteq s\).</i>
+    </p>
+
+    <p>
+      El postulado del tercero es la herramienta que necesitamos para garantizar que \(1\) es elementa y, por tanto, \(2\) es construible tal cual deseamos. Más aún, \(3 = \{0, 1, 2\}\) es construible en el sentido de que \(2\) es elemental.
+    </p>
+    <p>
+      <b>Teorema del par:</b> <i>Si \(a\) y \(b\) son elementales, \(\{a,b\}\) es elemental.</i><br>
+      <i>Demostración:</i> El elemento \(s\) en el postulado del tercero es la cota superior de \(\{a,b\}\) que requerimos para que este conjunto sea elemental vía el postulado de acotación.
+    </p>
+    <p>
+      Aplicando, sistemáticamente la extrategia del teorema del par, podemos ver que si \(a_1,\ldots, a_n\) son elementales, entonces \(\{a_1,\ldots, a_n\}\) es elemental y ciertamente, tenemos que los conjuntos finitos son elementales. Aunque no hayamos precisado que significa que un conjunto sea finito, eso sí, hemos bozquejado que es dada numero natural por separado \(0\) es el conjunto sin elementos, y \(n\) es el conjunto de números naturales menores que \(n\). Hasta este momento hemos presupuesto que el lector conoce a los números naturales y sus propiedades, al menos de manera informal, fuera de la teoría de conjuntos. Vamos a precisar estas ideas para rellenar las lagunas de esta contrucción en la teoría de conjuntos, de esta manera el lector puede hacer de cuenta que nunca se ha hablado de los números naturales, ni de conjuntos finitos, y tomar definiciones formales (eso sí motivadas informalmente) para estas nociones.
     </p>
   </section>  
   </article>
