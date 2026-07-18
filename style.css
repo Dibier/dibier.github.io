@@ -72,7 +72,7 @@ main {
   border-bottom: 1px dashed #bfbfbf;
   position: relative;
   transition: background-color 0.25s ease;
-  text-align: center; /* Texto centrado en general */
+  /*text-align: center; /* Texto centrado en general */
 }
 
 .entrada:last-child {
