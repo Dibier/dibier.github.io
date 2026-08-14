@@ -52,7 +52,11 @@
         Demostración:</i> Notemos que \[\sum_{i=1}^\infty {1\over 2^i} = {1\over 1 - {1\over 2}}-1 = 1.\] En consecuencia, es suficiente tomar \(\varepsilon_i = \varepsilon /2^i\) para \(i=1, 2, 3,\ldots\) y se tiene el resultado esperado.
     </p>
     <p>
-      El siguiente resultado es el de aproximación:
+      <b>Aproximación:</b> <i>Si \(a\le b +\varepsilon\) fijos \(a\) y \(b\) en la recta extendida y \(\varepsilon > 0\) arbitrariamente pequeño, entonces \(a\le b\).<br>
+      Demostración:</i> Si \(b=\mp\infty\), tomando \(\varepsilon = 1\), se tiene que \(a\le b+1 = b\). Podemos suponer que \(-\infty &lt; b &lt; \infty\). Si, para llegar a una contradicción, suponemos que \(b &lt; a\). Podemos elegir \(\varepsilon = (a-b)/2\), en consecuencia \(a\le b+\varepsilon &lt; a\) lo cual es imposible. Por tanto, \(a\le b\). 
+    </p>
+    <p>
+      <b>Medida de suma:</b> Además de los anteriores resultados, conviene trabajar con una medida que aparece frecuentemente en análisis y este caso, no es la excepción. Dada una función \(\Sigma: U\to [0, \infty]\), para cada \(A\subseteq U\), deseamos extenderla sobre \(A\) a una suma \(\Sigma A\). Para esto, es natural empezar por definir \(\Sigma 0 = 0\), \(\Sigma \{x\} = \Sigma (x)\) y en general \(\Sigma \{x_1, \ldots, x_n\} = \Sigma \{x_1\} + \ldots + \Sigma \{x_n\}\) para conjuntos finitos. Si un conjunto es infinito, podemos definir \(\Sigma A = \sup \Sigma N\) donde el suprmemo se toma sobre todos los \(N\subseteq A\) finitos, claramente esta suma es compatible con la definida anteriormente para conjuntos finitos si \(A\) es finito.
     </p>
   </section>
   </article>
