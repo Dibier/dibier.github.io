@@ -133,6 +133,20 @@ main {
   font-style: italic;
 }
 
+/* ------------------ Listas en Entradas ------------------ */
+
+.entrada ol,
+.entrada ul {
+  font-size: 1rem;       /* Mismo tamaño que .entrada p (16px) */
+  color: #444;           /* Mismo color suave de texto */
+  line-height: 1.7;      /* Mismo interlineado cómodo */
+  margin: 0.8rem 0 1rem 1.8rem; /* Margen superior/inferior y sangría para los números */
+}
+
+.entrada li {
+  margin-bottom: 0.4rem; /* Un pequeño aire entre cada ítem de la lista */
+}
+
 /* ------------------ Pie de página ------------------ */
 
 footer {
