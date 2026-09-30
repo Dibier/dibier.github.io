@@ -97,7 +97,19 @@
       Si una medida está definida sobre un álgebra \({\cal A}\) de forma finitamente aditiva, los conjuntos de \({\cal A}\) son medibles en la medida exterior generada. Si \(X\subseteq U\) arbitrario y \(A_1, A_2,\ldots\in {\cal A}\) es un cubrimiento de \(X\), entonces \(A_i-A\) y \(A_i\cap A\) son cubrimientos en \({\cal A}\) de \(X-A\) y \(X\cap A\) respectivamente. En consecuencia, \[|X-A|+|X\cap A|\le \sum_i|A_i - A|+\sum_i|A_i\cap A|= \sum_i |A_i|.\] Así, \(|X-A|+|X\cap A|\le |X|\).
     </p>
     <p>
-      En ocaciones, la base o punto de partida viene dada por ciertos monoides de intersección \({\cal S\}\), que llamaremos semiálgebras, contienen a \(U\), son cerrados bajo intersecciónes finitas, y el complemento de uno de sus miembros es unión de una secuencia finita y disjunta de sus mismos miembros. Por conveniencia,oda semiálgebra contiene a \(0\) ya que el complemento de \(U\) es union de una secuencia finita miembros de \({\cal S}\) dejando como única posibilidad a \(0\).</p>
+      En ocaciones, la base o punto de partida viene dada por ciertos monoides de intersección \({\cal S\}\), que llamaremos semiálgebras, contienen a \(U\), son cerrados bajo intersecciónes finitas, y el complemento de uno de sus miembros es unión de una secuencia finita y disjunta de sus mismos miembros. Por conveniencia,oda semiálgebra contiene a \(0\) ya que el complemento de \(U\) es union de una secuencia finita miembros de \({\cal S}\) dejando como única posibilidad a \(0\).<br>
+      El álgebra generada por \({\cal S}\) consiste en las uniones disjuntas finitas de miembros de \({\cal S}\). Una función \(\||\) aditiva en \({\cal S}) se puede extender, con ayuda del ejercicio anterior, a una contable, y así generar una medida.
+    </p>
+
+    <h2>¿Qué es un espacio de medida?<h2>
+
+    <p>
+      Pudieramos pensar en este punto que un espacio de medida es un conjunto con una medida. En realidad lo que los matemáticos suelen llamar espacio de medida es una construcción más sutil, más cercana a favorecer el algoritmo de construir medidas a partir de conjuntos cada vez más complejos de manera coherente con la adititivad contable. Dicho esto, un espacio de medida es una terna de un conjunto \(U\), una familia de partes de \(U\) que llamaremos medibles cerrada para complementos y uniones contables y una función \(||\) aditiva. Hemos ususado la palabra medible anteriormente para referirnos a ciertos conjuntos que satisfacen una propiedad dada una medida exterior. Dado que \(||\) es una medida en el sentido dicho anteriormente, es natural preguntarse sobre la relación de los conjuntos medibles del espacio y los medibles según la medida exterior, tenemos que los conjuntos medibles del espacio son en efecto medibles. Sin embargo, se puede probar que no necesesariamente  todo conjunto medible según Caratheodory es medible en el espacio. La razón para no trabajar con todos los conjuntos medibles es que quisieramos tener agumentos tipo "inducción" donde baste comprobar una propiedad para ciertos conjuntos base, y ver que la propiedad es bien comportada para complementos y uniones contables, esto implica que la propiedad es cierta al menos para todos los conjuntos obtenidos de los base a traves de estas dos propiedades. Una familia de conjuntos que satisface estas dos propiedades, comunmente recibe el nombre de \(\sigma\)-álgebra, o álgebra contable.
+    </p>
+    <h2>Medida producto</h2>
+    <p>
+      Apliquemos lo anterior para construir la medida producto de dos medidas en el producto cartesiano, que por inducción permite construir productos fininitos de medidas. Sean \(U\) y \(V\) con medidas exteriores que denotaremos indistintamente por \(||\). Entonces, 
+    </p>
   </section>
   </article>
   </main>
